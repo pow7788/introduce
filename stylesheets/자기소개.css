@@ -1,0 +1,58 @@
+/*선택자(selector) : 태그의 이름, 클래스의 이름, id의 이름을 의미하는 노란색 글자들을 선택자(selector, 셀렉터)라고 한다. 효과를 주고 싶은 아이들을 선택하기 위해 사용하는 이름이다.*/
+/*프로퍼티(property) : 파란색 글자들, 그러니까 우리가 주고싶은 효과의 이름들을 프로퍼티(property)라고 한다. HTML 태그의 속성(attribute, 어트리뷰트)과 헷갈리지 말도록 하자.*/
+/*밸류(value) : 각 프로퍼티의 값을 의미한다. */
+
+/*CSS초기화 - 다음 시간에 설명*/
+body,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  /*여기에서는 nav가 클래스 이름이 아닌 태그의 이름이기 때문에 앞에 .을 붙이지 않고 그냥 nav라고만 써서 선택자로 사용한 것을 알 수 있다.*/
+  text-align: center; /*text-align은 해당 태그 안에 있는 텍스트(로 취급되는 것들)을 왼쪽, 가운데, 오른쪽으로 정렬할 수 있게 해 준다.*/
+}
+.header {
+  margin-bottom: 2em;
+}
+#scotty {
+  border-radius: 1em;
+}
+.container {
+  background-color: black;
+  color: white;
+}
+
+.main-contents {
+  padding: 2em; /* padding은 박스와 그 안에 있는 내용물 사이의 간격이다. 월요일에 예제로 다시 설명 */
+  /*em과 rem, 그리고 px이라는 단위에 대해서도 월요일에 설명*/
+  margin: 0 20vw 0 20vw; /* margin은 박스와 박스 사이의 간격이다. 이것도 월요일에 예제로 살펴볼 예정 */
+}
+
+.footprint {
+  /* footprint라는 클래스(class)를 가진 태그에 원하는 효과를 적용시키기 위해 .footprint라고 작성 해 주었다. 앞에 .이 붙으면 해당 선택자는 class라는 의미이다  */
+  margin: 0 15vw 0 15vw;
+  padding-bottom: 3em;
+}
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#footer {
+  /*footer라는 id를 가진 태그에 원하는 효과를 적용시키기 위해 #footer라고 작성 해 주었다. 앞에 #이 붙으면 id라는 의미이다. */
+  border-top: grey solid 1px;
+  text-align: center;
+  padding: 1em;
+  margin-bottom: 1em;
+  max-height: 0.5em;
+
+  font-size: 0.7em;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        /* body 태그와 html태그의 padding과 margin을 0으로 초기화 */
+        body,
+        html {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .navbar {
+            font-size:0.8em;
+            text-align: center; /*내용물 가운데정렬*/
+        }
+        .header {
+            margin-bottom: 2em;
+        }
+        #scotty {
+            border-radius: 1em;
+        }
+        .container {
+            background-color:#B8F3B8;
+            color: black;
+        }
+
+        .main-contents {
+            padding: 1em; /* padding은 박스와 그 안에 있는 내용물 사이의 간격이다 */
+            margin: 0 15vw 0 15vw;
+            font-size:0.8em;
+        }
+        
+        .footprint {/* 앞에 .이 붙으면 해당 선택자는 class라는 의미이다  */
+            margin: 0 15vw 0 15vw;
+            padding-bottom: 3em;
+        }
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+        }
+        #footer {/* 앞에 #이 붙으면 id라는 의미이다. */
+            border-top: grey solid 1px;
+            text-align: center;
+            padding: 1em;
+            margin-bottom: 1em;
+            max-height: 0.5em;
+            font-size: 0.7em;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+    <title>자기소개페이지</title>
+</head>
+<body>
+    <div class="navbar" style="background-color:#A8C8F9;color:black;padding:0.5em"><a>Profile</a> | <a>HelloWorld</a> | <a>Word counter</a> | <a href="http://www.naver.com">네이버</a></div>
+
+    <div class="header" style="text-align:center">
+        <h1>안녕하세요, 제 이름은 이상윤 입니다</h1><!--h1,h2..-->
+        <img src="./imgs/photo.jpg" alt="LSY logo" id="scotty" width="500px">
+    </div>
+
+
+    <div class="container">
+        <div class="main-contents">
+            <h2>자기소개</h2>
+            <p>안녕하세요, 반갑습니다. 제 이름은 이상윤입니다. 나이는 95년생으로 올해 스물 다섯입니다. </p>
+            <h2>나의 웹 (혹은 IT) 서비스 아이디어</h2>
+            <p>
+                저는 대학생활을 하면서 불편한 점을 개선 할 수 있는 서비스를 개발하고 싶습니다.
+                <br>
+                <ul>
+                    <li>1.버스 정보</li>
+                    API를 이용해 버스정보를 쉽게 얻을 수 있는 탭
+                    <li>2.식당 정보</li>
+                    학생식당, 학교 앞 상권 정보를 쉽고 정확하게 얻을 수 있는 탭
+                    <li>3.도서관 정보</li>
+                    도서관 내 열람실 정보와 이용시간 등을 쉽게 볼 수 있는 탭
+                    <li>4.기타 정보</li>
+                    편의점 운영시간, 기타 정보 등 다양한 정보
+                </ul>
+            </p>
+        </div>
+    </div>
+
+
+    <div class="footprint">
+        <h2>방명록</h2>
+        <form action="">
+            이름 <input type="text">
+            비밀번호 <input type="password">
+            <br><br>
+            <textarea name="footprint" id="footprint"rows="10"></textarea>
+            <input type="submit" value="제출하기" style="float:right;">
+        </form>
+    </div>
+    <div id="footer" style="text-align:center;">
+        단국대 멋쟁이 사자처럼
+    </div>
+</body>
+</html>
